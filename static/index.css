@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+    width: 70vw;
+    margin: 0px auto;
+}
+.nav {
+  height: 48px;
+  width: 100%;
+  color: white;
+  display: flex;
+  background-color: #ff4b2b;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .h3 {
+  padding: 0px 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.addCategory a {
+  color: white;
+text-decoration: none;
+font-family: "Open Sans", sans-serif;
+
+}
+.addCategory a:hover {
+  font-weight: bold;
+}
+
+.buttonsInNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.buttonInNavBar{
+    margin: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:wheat;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

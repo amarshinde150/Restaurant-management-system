@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainContainer mainContainer-modified">
+        <div class="container container-height-increased container-modified" id="container">
+            <div class="profileContainer">
+                <div class="profilePic"><img class="ProfileImage" src="/baloons.jpg" alt=""></div>
+                <div class="name">
+                    <h3 class="profileName">
+                        <% if (typeof(details)!='undefined' ) { %>
+                            <%- details.name%>
+                                <%} %>
+                    </h3>
+                </div>
+                <div class="email">
+                    <p class="profileParagraph">
+                        <% if (typeof(details)!='undefined' ) { %>
+                            <%- details.email%>
+                                <%} %>
+                    </p>
+                </div>
+                <div class="selectButton"><a href="/changepassword">+ Change Password</a></span>
+                </div>
+                <div class="selectButton"><a href="/auth/logout">+ Log Out</a></span>
+                </div>
+                <% if (typeof(details)!='undefined' ) { %>
+                <%- details.id%>
+                <%} %>
+            </div>
+            <% if(typeof(pageContent)!='undefined' ){%>
+            <%- pageContent %>
+            <% }%>
+        </div>
+        <script src="/index.js"></script>
+</body>
+
+</html>

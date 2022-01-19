@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainContainer mainContainer-modified">
+        <div class="container container-height-increased container-modified" id="container">
+            <div class="profileContainer">
+                <div class="profilePic"><img class="ProfileImage" src="/baloons.jpg" alt=""></div>
+                <div class="name">
+                    <h3 class="profileName">
+                        <% if (typeof(details)!='undefined' ) { %>
+                            <%- details.name%>
+                                <%} %>
+                    </h3>
+                </div>
+                <div class="email">
+                    <p class="profileParagraph">
+                        <% if (typeof(details)!='undefined' ) { %>
+                            <%- details.email%>
+                                <%} %>
+                    </p>
+                </div>
+                <div class="selectButton"><a href="/changepassword">+ Change Password</a></span>
+                </div>
+                <div class="selectButton"><a href="/auth/logout">+ Log Out</a></span>
+                </div>
+                <% if (typeof(details)!='undefined' ) { %>
+                <%- details.id%>
+                <%} %>
+            </div>
+            
+            <!-- pageContentpageContentpageContentpageContentpageContentpageContentpageContent -->
+            <!-- <div class="mainH2">
+                <div class="mainHeading">
+                    <h1>My Cart</h1>
+                </div>
+                <div class="contentContainer contentContainerWidth contentContainerCart">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Item name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Updation</th>
+                            <th scope="col">Deletion</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <form action="/auth/updateQuantityValue" method="post">
+                                <tr>
+                                    <input name="cart_id" type="hidden" value="??">
+                                    <th scope="row">Biryani</th>
+                                    <td>250</td>
+                                    <td><input name="quantity" class="inputCart" type="text" value="2"></td>
+                                    <td>500</td>
+                                    <td>
+                                        <button class="cartButton">Update</button>
+                                    </td>
+                                    <td>
+                                        <span class="selectButton"><a href="/auth/logout">Delete</a></span>
+                                    </td>
+                                  </tr>
+                            </form>
+                            <form action="/auth/updateQuantityValue" method="post">
+                                <tr>
+                                    <input name="cart_id" type="hidden" value="??">
+                                    <th scope="row">veg Meal</th>
+                                    <td>120</td>
+                                    <td><input name="quantity" class="inputCart" type="text" value="3"></td>
+                                    <td>360</td>
+                                    <td>
+                                        <button class="cartButton">Update</button>
+                                    </td>
+                                    <td>
+                                        <span class="selectButton"><a href="/auth/logout">Delete</a></span>
+                                    </td>
+                                  </tr>
+                            </form>
+                            <form action="/auth/updateQuantityValue" method="post">
+                                <tr>
+                                    <input name="cart_id" type="hidden" value="??">
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td>Total Bill</td>
+                                    <td>860</td>
+                                    <td>
+                                        <button class="cartButton"></button>
+                                    </td>
+                                    <td>
+                                        <span class="selectButton"><a href="/auth/logout"></a></span>
+                                    </td>
+                                  </tr>
+                            </form>
+                        </tbody>
+                      </table>
+                      <button>Order</button>
+
+                </div>
+            </div> -->
+            <%if(typeof(pageContent)!='undefined'){%>
+            <%- pageContent %>    
+            <%}%>
+            
+            
+            
+            
+            <!-- pageContentpageContentpageContentpageContentpageContentpageContentpageContent -->
+
+
+
+        </div>
+        <script src="/index.js"></script>
+</body>
+
+</html>

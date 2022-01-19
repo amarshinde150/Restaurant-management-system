@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="mainHeading">
+            <h1>Employee Login</h1>
+        </div>
+        <% if (typeof(color)!='undefined' ) { %>
+            <%- color%>
+                <%- message %>
+                    <%- "</div>" %>
+                        <%} else { %>
+                            <% } %>
+        <div class="addCategory"><a href="/">+ Customer Login</a></div>
+        <div class="container" id="container">
+            <div class="loginForm">
+                <form action="/auth/registerEmployee" method="post">
+                    <h1 class="mb-5">Create Account</h1>
+                    <input name="name" type="text" placeholder="Name" />
+                    <input name="email" type="email" placeholder="Email" />
+                    <input name="scretKey" type="text" placeholder="Scret Key(EX: mysecret)" />
+                    <input name="password" type="password" placeholder="Password" />
+                    <input name="passwordConfirm" type="password" placeholder="Confirm Password" />
+                    <button>Sign Up</button>
+                    <div>have an account <span class="selectButton"><a href="/employeeLoginAccount">Log In</a></span>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+       
+
+        <!-- <div class="form-container sign-in-container">
+                                    <form action="/auth/login" method="post">
+                                        <h1 class="mb-5">Sign in</h1>
+                                        <input name="email" type="email" placeholder="Email" />
+                                        <input name="password" type="password" placeholder="Password" />
+                                        <a href="/forgot">Forgot your password?</a>
+                                        <button>Sign In</button>
+                                    </form>
+                                </div> -->
+
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

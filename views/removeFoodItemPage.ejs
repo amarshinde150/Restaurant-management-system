@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <% if (typeof(color)!='undefined') { %>
+    <%- color%>
+    <%- message %> 
+    <%- "</div>" %> 
+    <%} else { %>
+    <% } %>
+    <div class="container" id="container">
+        <div class="form-container  sign-in-container forgot-container">
+            <form action="/auth/removeFoodItem" method="post">
+                <h1 class="mb-5">Remove Food Item</h1>
+                <input name="id" type="text" placeholder="Enter Id" />
+                <button>Remove Food Item</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
